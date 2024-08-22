@@ -1,0 +1,157 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+    body{
+font-family: 'Rubik', 'sans-serif';
+font-style: normal;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    ul{
+        list-style: none;
+    }
+
+    button{
+        border: none;
+        background-color: transparent;
+    }
+
+    .title{
+        font-weight: 500; 
+        font-size: 32px;
+        line-height: 1.34375;
+        color: #363940;
+        }
+    .text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.375;
+        color: #95a1bb;
+        }
+
+.header {
+    background-color: #0a61f7;
+    padding: 14px 0;
+}
+.menu-link{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.66667;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: #fff;
+}
+
+.main-title{
+font-weight: 500;
+font-size: 58px;
+line-height: 1.17241;
+color: #363940;
+margin-bottom: 30px;
+}
+
+.button{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.4;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+
+border-radius: 4px;
+width: 152px;
+height: 50px;
+
+background-color: #0a61f7;
+}
+
+/* */
+
+.rates-section {
+    background-color: #f9fafc;
+    padding: 100px 0;
+}
+
+.rates-section .title{
+    margin-bottom: 20px;
+}
+.rates-section .text{
+    margin-bottom: 40px;
+}
+
+
+
+
+.table{
+    border-collapse: collapse;
+}
+th, td {
+border: 1px solid #95a1bb;
+width: 241px;
+text-align: center;
+padding: 15px 0;
+}
+.table-title{
+    /* font-family: "Rubik", sans-serif; */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+    /* text-align: center; */
+    color: #363940;
+}
+.table-subtitle{
+/* font-family: "Rubik", sans-serif; */
+font-weight: 400;
+font-size: 14px;
+line-height: 1.57143;
+color: #363940;
+}
+.table-button{
+/* font-family: "Rubik", sans-serif; */
+font-weight: 500;
+font-size: 12px;
+line-height: 1.63333;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+/* text-align: center; */
+color: #0a61f7;
+border: 1px solid #0a61f7;
+border-radius: 4px;
+width: 140px;
+padding: 8px 0;
+}
+.table-subtitle.gray{
+color: #95a1bb;
+}
+.table-button.active{
+    background-color: #0a61f7;
+    color: #fff;
+}
+.table-footer td{
+    padding: 30px 0;
+}
+/*  */
+.create-account-section{
+    padding: 100px 0;
+}
+.create-account-section .title{
+    margin-bottom: 50px;
+}
+.create-account-section .text{
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+.list-item{
+list-style-image:url("./images/Mask.svg");
+color: #363940;
+padding: 30px;
+padding-bottom: 15px;
+}
