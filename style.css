@@ -9,7 +9,9 @@ html,
 font-family: 'Rubik', 'sans-serif';
 font-style: normal;
     }
-
+    .table-link {
+        color: #0A61F7;
+    }
     a{
         text-decoration: none;
     }
@@ -57,6 +59,11 @@ color: #363940;
 margin-bottom: 30px;
 }
 
+.main .text {
+    margin-bottom: 40px;
+}
+
+
 .button{
 font-weight: 500;
 font-size: 14px;
@@ -95,7 +102,7 @@ background-color: #0a61f7;
 }
 th, td {
 border: 1px solid #95a1bb;
-width: 241px;
+width: 240px;
 text-align: center;
 padding: 15px 0;
 }
@@ -104,7 +111,6 @@ padding: 15px 0;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22222;
-    /* text-align: center; */
     color: #363940;
 }
 .table-subtitle{
@@ -112,6 +118,8 @@ padding: 15px 0;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.57143;
+padding-left: 20px;
+text-align: left;
 color: #363940;
 }
 .table-button{
@@ -149,9 +157,69 @@ color: #95a1bb;
     margin-bottom: 40px;
     max-width: 500px;
 }
-.list-item{
+.list-item {
 list-style-image:url("./images/Mask.svg");
 color: #363940;
-padding: 30px;
-padding-bottom: 15px;
+margin-left: 30px;
+margin-bottom: 15px;
+}
+form {
+    width: 100%;
+    max-width: 500px;
+}
+input, select, fieldset, textarea{
+border: 1px solid #95a1bb;
+border-radius: 4px;
+padding: 14px 15px;
+}
+input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder { 
+font-weight: 400;
+font-size: 16px;
+line-height: 1.4;
+color: #95a1bb;
+font-family: inherit;
+}
+input[type="text"]{
+width: 100%;
+}
+input[type="email"], input[type="password"], input[type="date"], select{
+width: 230px;
+height: 50px;
+}
+fieldset{
+    width: 100%;
+    padding: 30px 15px;
+}
+textarea{
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+form .button{
+width: 100%;
+}
+select{
+    background: url(./images/Arrow-down.svg) no-repeat right 15px top 50%;
+    appearance: none; /* Скрывает стрелку в современных браузерах */
+    -webkit-appearance: none; /* Скрывает стрелку в старых версиях Chrome, Safari */
+    -moz-appearance: none; /* Скрывает стрелку в Firefox */
+
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    background: url(./images/Calendar.svg) no-repeat;
+}
+
+
+
+
+footer{
+padding: 20px 0;
+background: #0a61f7;
+text-align: center;
+}
+small{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.57143;
+color: #fff;
 }
