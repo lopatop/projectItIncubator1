@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 ul {
     list-style: none;
 }
@@ -25,6 +29,12 @@ ul {
 button {
     border: none;
     background-color: transparent;
+}
+
+button:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .title {
@@ -284,6 +294,10 @@ select {
     width: 230px;
     height: 50px;
     flex-grow: 1;
+}
+
+input[type="radio"], input[type="checkbox"], input[type="data"], select{
+    cursor: pointer;
 }
 
 .stack,
