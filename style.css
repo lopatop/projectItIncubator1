@@ -8,6 +8,7 @@ html,
 body {
     font-family: 'Rubik', 'sans-serif';
     font-style: normal;
+    min-width: 375px;
 }
 
 .table-link {
@@ -29,12 +30,12 @@ ul {
 button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 button:hover{
     transform: translateY(-5px);
-    cursor: pointer;
-    transition: 0.2s;
 }
 
 .title {
@@ -86,6 +87,10 @@ button:hover{
     color: #fff;
 }
 
+.menu-icon{
+    display: none;
+}
+
 .main-title {
     font-weight: 500;
     font-size: 58px;
@@ -118,13 +123,15 @@ button:hover{
 
 .main-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 800px;
+    min-height: 800px;
 }
 
 .main-img {
-    align-self: center;
+    align-self: flex-end;
+    max-width: 656px;
+    max-height: 650px;
 }
 
 /* */
@@ -350,4 +357,56 @@ small {
     font-size: 14px;
     line-height: 1.57143;
     color: #fff;
+}
+
+@media screen and (max-width: 1440px) {
+    .main-wrapper{
+        flex-direction: column;
+    }
+    .main-info{
+        align-self: flex-start;
+        margin: 100px 0px 80px;
+    }
+    .main-img{
+        align-self: center;
+    }
+    .table{
+        width: 940px;
+    }
+    .table-wrapper{
+        overflow-x: auto;
+        width: 100%;
+        max-width: 940px;
+    }
+    .account-wrapper{
+        flex-direction: column;
+        gap: 70px;
+    }
+    .create-account-section .text{
+        max-width: unset;
+    }
+    form{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .main-title {
+        font-size: 52px;
+        line-height: 60px;
+    }
+    .main-info{
+        margin-bottom: 60px;
+    }
+    .main-img {
+        width: 345px;
+        height: 342px;
+        
+    }
 }
