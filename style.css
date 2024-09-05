@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
@@ -34,7 +34,7 @@ button {
     transition: 0.2s;
 }
 
-button:hover{
+button:hover {
     transform: translateY(-5px);
 }
 
@@ -64,7 +64,7 @@ button:hover{
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .header-wrapper {
@@ -87,7 +87,7 @@ button:hover{
     color: #fff;
 }
 
-.menu-icon{
+.menu-icon {
     display: none;
 }
 
@@ -103,7 +103,6 @@ button:hover{
     margin-bottom: 40px;
     max-width: 380px;
 }
-
 
 .button {
     font-weight: 500;
@@ -131,7 +130,7 @@ button:hover{
 .main-img {
     align-self: flex-end;
     max-width: 656px;
-    max-height: 650px;
+    width: 100%;
 }
 
 /* */
@@ -153,6 +152,7 @@ button:hover{
 
 .rates-section .text {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 
@@ -303,7 +303,10 @@ select {
     flex-grow: 1;
 }
 
-input[type="radio"], input[type="checkbox"], input[type="data"], select{
+input[type="radio"],
+input[type="checkbox"],
+input[type="date"],
+select {
     cursor: pointer;
 }
 
@@ -343,9 +346,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: url(./images/Calendar.svg) no-repeat;
 }
 
-
-
-
 footer {
     padding: 20px 0;
     background: #0a61f7;
@@ -360,53 +360,73 @@ small {
 }
 
 @media screen and (max-width: 1440px) {
-    .main-wrapper{
+    .main-wrapper {
         flex-direction: column;
+        min-height: auto;
     }
-    .main-info{
+
+    .main-info {
         align-self: flex-start;
         margin: 100px 0px 80px;
     }
-    .main-img{
+
+    .main-img {
         align-self: center;
     }
-    .table{
+
+    .table {
         width: 940px;
     }
-    .table-wrapper{
+
+    .table-wrapper {
         overflow-x: auto;
         width: 100%;
         max-width: 940px;
     }
-    .account-wrapper{
+
+    .account-wrapper {
         flex-direction: column;
         gap: 70px;
     }
-    .create-account-section .text{
+
+    .create-account-section .text {
         max-width: unset;
     }
-    form{
+
+    form {
         align-self: center;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .menu{
+    .menu {
         display: none;
     }
-    .menu-icon{
+
+    .menu-icon {
         display: block;
     }
+
     .main-title {
         font-size: 52px;
         line-height: 60px;
     }
-    .main-info{
-        margin-bottom: 60px;
+
+    .main-info {
+        margin-bottom: 60px 0;
     }
-    .main-img {
-        width: 345px;
-        height: 342px;
-        
+
+    .account-wrapper {
+        gap: 60px;
     }
+
+    label {
+        white-space: nowrap;
+    }
+
+    fieldset {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
 }
